@@ -23,11 +23,14 @@ public class UserInterface {
             int option = scanner.nextInt();
 
             switch (option) {
+                case 0:
+                    return;
                 case 1:
                     createLocation();
                     break;
-                case 0:
-                    return;
+                case 2:
+                    printLocations();
+                    break;
                 default:
                     System.out.println("błąd, podaj właściwą komendę");
             }
@@ -52,5 +55,9 @@ public class UserInterface {
         System.out.println("Wysłany http request" + requestBody);
         String responseBody = locationController.createLocation(requestBody);
         System.out.println("Odebrany http response: " + responseBody);
+    }
+
+    private void printLocations() {
+        //todo
     }
 }
