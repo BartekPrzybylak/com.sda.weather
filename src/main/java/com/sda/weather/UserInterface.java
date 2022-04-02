@@ -53,7 +53,7 @@ public class UserInterface {
         Long latitude = scanner.nextLong();
 
 
-        String requestBody = String.format("{\"city\":%s\",\"longitude\":%d\",\"latitude\":%d\",\"country\":%s\",\"region\":%s\"}", city, longitude, latitude, country, region);
+        String requestBody = String.format("{\"city\":\"%s\",\"longitude\":\"%d\",\"latitude\":\"%d\",\"country\":\"%s\",\"region\":\"%s\"}", city, longitude, latitude, country, region);
         System.out.println("Wysłany http request" + requestBody);
         String responseBody = locationController.createLocation(requestBody);
         System.out.println("Odebrany http response: " + responseBody);
