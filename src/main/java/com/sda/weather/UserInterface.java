@@ -12,18 +12,17 @@ public class UserInterface {
         this.locationController = locationController;
     }
 
-    public void run(){
+    public void run() {
         Scanner scanner = new Scanner(System.in);
 
-
-        while(true){
+        while (true) {
             System.out.println("Co chcesz zrobić? ");
             System.out.println("0. zamknij ");
             System.out.println("1. dodaj lokalizację ");
 
             int option = scanner.nextInt();
 
-            switch(option){
+            switch (option) {
                 case 1:
                     createLocation();
                     break;

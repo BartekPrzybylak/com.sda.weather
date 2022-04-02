@@ -1,7 +1,5 @@
 package com.sda.weather;
 
-import com.sda.weather.location.LocationRepository;
-import com.sda.weather.location.LocationRepositoryImpl;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
@@ -27,3 +25,11 @@ public class WeatherApplication {
         UserInterface.run();
     }
 }
+
+/**
+ *         ObjectMapper objectMapper = new ObjectMapper();
+ *         LocationService locationService = new LocationService();
+ *         LocationController locationController = new LocationController(objectMapper, locationService);
+ *         UserInterface userInterface = new UserInterface(locationController);
+ *         userInterface.run();
+ */
