@@ -31,7 +31,7 @@ public class LocationService {
 
         Location location = new Location(city, country, region, longitude, latitude);
 
-        //todo
-        return null;
+        Location savedLocation = locationRepository.save(location);
+        return savedLocation;
     }
 }

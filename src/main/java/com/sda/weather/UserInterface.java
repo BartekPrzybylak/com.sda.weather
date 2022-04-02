@@ -19,6 +19,7 @@ public class UserInterface {
             System.out.println("Co chcesz zrobić? ");
             System.out.println("0. zamknij ");
             System.out.println("1. dodaj lokalizację ");
+            System.out.println("2. wyświetl dodane lokalizacje ");
 
             int option = scanner.nextInt();
 
@@ -42,22 +43,23 @@ public class UserInterface {
 
         System.out.println("Podaj nazwę miasta: ");
         String city = scanner.nextLine();
-        System.out.println("Podaj długość geograficzną: ");
-        Long longitude = scanner.nextLong();
-        System.out.println("Podaj szerokość geograficzną: ");
-        Long latitude = scanner.nextLong();
         System.out.println("Podaj kraj: ");
         String country = scanner.nextLine();
         System.out.println("Podaj region: ");
         String region = scanner.nextLine();
+        System.out.println("Podaj długość geograficzną: ");
+        Long longitude = scanner.nextLong();
+        System.out.println("Podaj szerokość geograficzną: ");
+        Long latitude = scanner.nextLong();
 
-        String requestBody = String.format("{\"city\":%s\",\"longtitude\":%d\",\"latitude\":%d\",\"country\":%s\",\"region\":%s\"}", city, longitude, latitude, country, region);
+
+        String requestBody = String.format("{\"city\":%s\",\"longitude\":%d\",\"latitude\":%d\",\"country\":%s\",\"region\":%s\"}", city, longitude, latitude, country, region);
         System.out.println("Wysłany http request" + requestBody);
         String responseBody = locationController.createLocation(requestBody);
         System.out.println("Odebrany http response: " + responseBody);
     }
 
     private void printLocations() {
-        //todo
+
     }
 }
