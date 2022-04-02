@@ -27,7 +27,7 @@ public class UserInterface {
                 case 1:
                     createLocation();
                     break;
-                case 2:
+                case 0:
                     return;
                 default:
                     System.out.println("błąd, podaj właściwą komendę");

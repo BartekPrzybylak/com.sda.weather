@@ -10,4 +10,8 @@ public class LocationController {
         this.objectMapper = objectMapper;
         this.entryService = entryService;
     }
+
+    public String createLocation(String requestBody) {
+        return requestBody;
+    }
 }
