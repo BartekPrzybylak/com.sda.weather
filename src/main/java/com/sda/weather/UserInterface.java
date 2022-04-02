@@ -1,6 +1,6 @@
 package com.sda.weather;
 
-import location.LocationController;
+import com.sda.weather.location.LocationController;
 
 import java.util.Scanner;
 

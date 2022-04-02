@@ -1,4 +1,4 @@
-package location;
+package com.sda.weather.location;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

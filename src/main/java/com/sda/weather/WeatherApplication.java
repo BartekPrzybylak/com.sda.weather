@@ -1,8 +1,7 @@
 package com.sda.weather;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import location.LocationRepository;
-import location.LocationRepositoryImpl;
+import com.sda.weather.location.LocationRepository;
+import com.sda.weather.location.LocationRepositoryImpl;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
