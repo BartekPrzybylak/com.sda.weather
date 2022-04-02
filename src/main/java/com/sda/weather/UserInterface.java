@@ -18,8 +18,8 @@ public class UserInterface {
 
         while(true){
             System.out.println("Co chcesz zrobić? ");
-            System.out.println("1. dodaj lokalizację ");
             System.out.println("0. zamknij ");
+            System.out.println("1. dodaj lokalizację ");
 
             int option = scanner.nextInt();
 

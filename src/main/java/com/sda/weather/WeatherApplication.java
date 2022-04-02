@@ -22,8 +22,8 @@ public class WeatherApplication {
 //        LocationRepository locationRepository = new LocationRepositoryImpl(sessionFactory);
 //        EntryService entryService = new EntryService(entryRepository, objectMapper);
 //        EntryController entryController = new EntryController(objectMapper, entryService);
-//        UserInterface userInterface = new UserInterface(entryController);
-//
+        UserInterface userInterface = new UserInterface(entryController);
+
         UserInterface.run();
     }
 }
