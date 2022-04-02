@@ -29,9 +29,9 @@ public class LocationService {
             throw new IllegalArgumentException("latitude must be between 0 and 180");
         }
 
-        Location location = new Location(city, country,region,longitude,latitude);
+        Location location = new Location(city, country, region, longitude, latitude);
 
         //todo
-
+        return null;
     }
 }
