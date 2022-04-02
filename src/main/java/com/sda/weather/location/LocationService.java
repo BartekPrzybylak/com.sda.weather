@@ -12,7 +12,7 @@ public class LocationService {
         this.objectMapper = objectMapper;
     }
 
-    Location createLocation(String city, String country, String region, long longitude, long latitude) {
+    public Location createLocation(String city, String country, String region, long longitude, long latitude) {
         if (city == null || city.isBlank()) {
             throw new IllegalArgumentException("city cannot be null");
         }
