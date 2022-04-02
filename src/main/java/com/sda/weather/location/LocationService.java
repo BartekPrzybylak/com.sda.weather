@@ -2,6 +2,8 @@ package com.sda.weather.location;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import java.util.List;
+
 public class LocationService {
 
     private final LocationRepository locationRepository;
@@ -34,4 +36,10 @@ public class LocationService {
         Location savedLocation = locationRepository.save(location);
         return savedLocation;
     }
+
+//    public List<Location> getLocations() {
+//        locationRepository.findAll()
+//        return List<Location>;
+//    }
+    //todo
 }

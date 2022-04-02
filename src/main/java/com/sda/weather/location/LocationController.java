@@ -46,4 +46,10 @@ public class LocationController {
         return locationDTO;
     }
 
+//    public String getAllLocations(){
+//        locationService.getLocations() lambda
+//    }
+
+    //todo
+
 }
