@@ -19,12 +19,12 @@ public class WeatherApplication {
                 .buildMetadata()
                 .buildSessionFactory();
 
-        ObjectMapper objectMapper = new ObjectMapper();
-        LocationRepository locationRepository = new LocationRepositoryImpl(sessionFactory);
+//        ObjectMapper objectMapper = new ObjectMapper();
+//        LocationRepository locationRepository = new LocationRepositoryImpl(sessionFactory);
 //        EntryService entryService = new EntryService(entryRepository, objectMapper);
 //        EntryController entryController = new EntryController(objectMapper, entryService);
 //        UserInterface userInterface = new UserInterface(entryController);
 //
-//        userInterface.run();
+        UserInterface.run();
     }
 }
