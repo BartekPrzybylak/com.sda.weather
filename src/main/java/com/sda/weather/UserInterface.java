@@ -1,6 +1,6 @@
 package com.sda.weather;
 
-import location.LocationController;
+import com.sda.weather.location.LocationController;
 
 import java.util.Scanner;
 
@@ -12,22 +12,21 @@ public class UserInterface {
         this.locationController = locationController;
     }
 
-    public void run(){
+    public void run() {
         Scanner scanner = new Scanner(System.in);
 
-
-        while(true){
+        while (true) {
             System.out.println("Co chcesz zrobić? ");
-            System.out.println("1. dodaj lokalizację ");
             System.out.println("0. zamknij ");
+            System.out.println("1. dodaj lokalizację ");
 
             int option = scanner.nextInt();
 
-            switch(option){
+            switch (option) {
                 case 1:
                     createLocation();
                     break;
-                case 2:
+                case 0:
                     return;
                 default:
                     System.out.println("błąd, podaj właściwą komendę");
